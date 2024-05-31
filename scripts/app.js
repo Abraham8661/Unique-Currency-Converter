@@ -112,7 +112,7 @@ form.addEventListener('submit', event=>{
     //convertCurrency()
 })
 
-fromSelectBox.addEventListener('click', event=>{
+fromSelectBox.addEventListener('change', event=>{
     event.preventDefault()
     conversionResult()
     getRate()
@@ -123,7 +123,7 @@ fromSelectBox.addEventListener('click', event=>{
     baseSymbol.textContent = fromSelectBox.value;
 })
 
-toSelectBox.addEventListener('click', event=>{
+toSelectBox.addEventListener('change', event=>{
     event.preventDefault()
     conversionResult()
     getRate()
