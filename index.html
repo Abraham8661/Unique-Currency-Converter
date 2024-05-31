@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="/scripts/app.js" defer></script>
+</head>
+<body class="bg-slate-950 w-screen p-6">
+  <section class="w-full lg:max-w-5xl mx-auto">
+    <div class="flex flex-col gap-12 items-center justify-center">
+      <div class="flex flex-col gap-2 items-center justify-center">
+        <h1 class="text-white text-[2rem] font-bold lg:text-[3rem] text-center">Unique Currency Converter</h1>
+        <p class="text-white text-[1.4rem] text-center">Convert to any currency in the world...</p>
+      </div>
+      <form action="" id="convert-form" class="bg-white w-full p-6 lg:p-12 flex flex-col gap-4 lg:gap-8 rounded-lg">
+        <div class="w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+          <div class="flex flex-col gap-2 items-start w-full">
+            <h6 class="font-semibold">Amount</h6>
+            <div class="flex items-center border border-black rounded-md p-2 w-full gap-4">
+              <p id="base-symbol" class="font-bold"></p>
+              <input class="bg-transparent border-none focus:bg-transparent focus:border-none focus:outline-none w-full" type="number" name="base-currency" id="amount-section" placeholder="Enter amount" value="0">
+            </div>
+          </div>
+          <!--From-->
+          <div class="flex flex-col gap-2 items-start w-full">
+            <h6 class="font-semibold">From</h6>
+            <div class="flex items-center border border-black rounded-md p-2 w-full">
+              <select id="from-select-box" class="bg-transparent border-none focus:bg-transparent focus:border-none focus:outline-none w-full" name="">
+
+              </select>
+            </div>
+          </div>
+          <!--To-->
+          <div class="flex flex-col gap-2 items-start w-full">
+            <h6 class="font-semibold">To</h6>
+            <div class="flex items-center border border-black rounded-md p-2 w-full">
+              <select id="to-select-box" class="bg-transparent border-none focus:bg-transparent focus:border-none focus:outline-none w-full" name="" id="">
+
+              </select>
+            </div>
+          </div>
+        </div>
+        <button id="form-button" class="bg-blue-600 text-white px-6 py-2 rounded-md max-w-full lg:max-w-40 hover:bg-blue-900 transition-colors delay-100">Convert</button>
+        <!--Result-->
+        <div id="result-box" class="hidden flex-col items-start justify-start">
+          <p id="convert-from-des" class="font-semibold text-slate-600"></p>
+          <h5 id="conversion" class="font-semibold text-[2rem]"></h5>
+          <p id="base-currency" class="font-semibold text-slate-500"></p>
+          <p id="target-currency" class="font-semibold text-slate-500"></p>
+        </div>
+
+      </form>
+
+    </div>
+    
+
+  </section>
+  
+</body>
+</html>
